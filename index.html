@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="charset=uft-8">
+
+<link rel="stylesheet" type="text/css" href="./index.css"/>
+
+<title>HX8</title>
+
+</head>
+
+<body>
+<div id="wrap">
+<div id="nav">
+	<ul>
+		<li id="login" onClick="login_show()">LOGIN</li>
+	</ul>
+</div>
+
+<div id="loginform">
+<form>
+	<p>
+	<label for="user">帳號</label><br>
+	<input type="text" id="user" />
+	</p>
+	<p>
+	<label for="pass">密碼</label><br>
+	<input type="text" id="pass" />
+	</p>
+</form>
+<a href="#">註冊</a>
+<div id="btn_login"></div>
+</div>
+
+<script>
+function login_show(){
+	cur = document.getElementById('loginform').style.display;
+	document.getElementById("loginform").style.display=cur?"":"block";
+}
+</script>
+
+<div id="ytb"></div>
+<div id="content">
+<div id="text">
+<p>
+某日，這封沒有寫上寄件地址信件送到你的手中：
+</p>
+<p>
+　　您好，這裡是XXX研究機構，目前有個行為研究需要多名受測者，希望您協助我們重要實驗的進行。實驗進行期間我們將提供免費的吃住，並且由於實驗時間較長，結束後也將給與六位數的研究報酬金。
+</p>
+<p>
+　　如果您有興趣想了解詳細，請在以下時間，到以下地點，與我聯絡。
+</p>
+<span id="text_sign">人類行為與心理認知  佛薩克博士</span>
+<span class="clearboth"></span>
+<p id="text_attend">
+你要參加嗎？
+</p>
+</div>
+<div id="attendbtn"></div>
+<span class="clearboth"></span>
+<div id="btns">
+	<div id="btn_detail"></div>
+	<div id="btn_all"></div>
+	<div id="btn_about"></div>
+</div>
+</div>
+
+<div id="foot">
+&copy;2013 H8, All right reserved.
+</div>
+
+</div>
+</body>
+
+</html>
