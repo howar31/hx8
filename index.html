@@ -4,6 +4,10 @@
 <meta http-equiv="Content-Type" content="charset=uft-8">
 
 <link rel="stylesheet" type="text/css" href="./index.css"/>
+<link rel="stylesheet" type="text/css" href="./overlay.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 
 <title>HX8</title>
 
@@ -26,17 +30,39 @@
 			<li id="nav_home"><img src="./image/btn_home.png" /></li>
 		</ul>
 		<ul id="nav_r">
-			<li id="nav_login"><img src="./image/btn_login.png" /></li>
-			<li id="nav_personal">個人頁面你沒給圖</li>
+			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>
+			<li id="nav_personal">個人頁面你還是沒給圖</li>
 			<li id="nav_all"><img src="./image/btn_all.png" /></li>
 			<li id="nav_detail"><img src="./image/btn_detail.png" /></li>
 		</ul>
 	</div>
+	
+	<div class="simple_overlay" id="overlay_login">
+		<form id="login_form">
+			<input type="text" id="login_user" placeholder="輸入帳號">
+			<input type="password" id="login_pass" placeholder="輸入密碼">
+			<input type="checkbox" id="login_rmbr"><label for="login_rmbr" id="login_rmbr_label">記住資料</label>
+			<input type="submit" id="login_submit" value="確認">
+		</form>
+		<a href="#" id="login_rgstr">註冊</a>
+	</div>
+	<script>
+		$("img[rel]").overlay({
+			top: 260,
+			mask: {
+				color: '#000',
+				loadSpeed: 500,
+				opacity: 0.9
+			},
+			onClose: function() {
+			}
+		});
+	</script>
 
 	<div id="content">
 		<img id="logo" src="./image/logo.png" />
 
-		<div id="ytb"><iframe width="570" height="320" src="//www.youtube.com/embed/eOQYNlCvoEs?rel=0" frameborder="0" allowfullscreen></iframe></div>
+		<div id="ytb"><iframe width="570" height="320" src="//www.youtube.com/embed/eOQYNlCvoEs?rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe></div>
 		<div id="text">
 			<p>
 			您好，
@@ -56,8 +82,8 @@
 		</div>
 	</div>
 	<div id="footer">
-		<img src='./image/H8-1_03.png' id='footer_plurk' />
-		<img src='./image/H8-1_05.png' id='footer_ask' />
+		<a href="http://plurk.com/hx8" target="_blank"><img src='./image/H8-1_03.png' id='footer_plurk' /></a>
+		<a href="http://ask.fm/hx8iris" target="_blank"><img src='./image/H8-1_05.png' id='footer_ask' /></a>
 		<img src='./image/H8-1_07.png' id='footer_hx8' />
 	</div>
 

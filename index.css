@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'wdcgbxk';
-	src: url('font/wdcgbxk.ttf');
+	font-family: 'wt002';
+	src: url('./font/wt002.ttf');
 }
 
 html, body {
@@ -12,6 +12,7 @@ html, body {
 	overflow-x: hidden;
 	position: relative;
 	z-index: -10;
+	font-family: 'wt002';
 }
 
 #wrap {
@@ -36,12 +37,12 @@ html, body {
 #frame_top { top: 0px;   }
 #frame_bot { top: 650px; }
 #bg_top    { top: 0px;   }
-#bg_mid    { top: 110px;  left: -140px; }
+#bg_mid    { top: 110px;  left: -205px; }
 #bg_bot    { top: 510px; }
 
 #logo {
 	position: absolute;
-	top: 40px;
+	top: 115px;
 	left: 455px;
 	width: 800px;
 	height: 458px;
@@ -58,7 +59,6 @@ html, body {
 
 #msg {
 	color: white;
-//	font-family: cyzzm;
 	text-align: right;
 	position: relative;
 	top: 30px;
@@ -80,7 +80,6 @@ html, body {
 
 #nav li {
 	list-style-type: none;
-	cursor: pointer;
 	border-radius: 5px;
 	width: 140px;
 	height: 44px;
@@ -88,7 +87,7 @@ html, body {
 }
 
 #nav li:hover {
-	background-color: rgba(255,0,0,0.2);
+	background-color: #381F1F;
 }
 
 #nav_l li { float: left;   margin-right: 7px; }
@@ -115,17 +114,14 @@ html, body {
 	top: 440px;
 	left: 540px;
 	color: white;
-	font-family: 'wdcgbxk';
 	text-align: right;
 	line-height: 1.8em;
 }
 
 #ruattend {
 	position: absolute;
-	height: 54px;
-	width: 272px;
 	left: 275px;
-	top: 230px;
+	top: 270px;
 }
 
 #attendbtn {
@@ -137,11 +133,72 @@ html, body {
 	width: 115px;
 	top: 200px;
 	left: 585px;
-	cursor: pointer;
 }
 
 #attendbtn:hover {
 	background-image: url('./image/btn_attend_hover.png');
+}
+
+#overlay_login {
+	position: relative;
+	color: white;
+}
+
+#overlay_login a {
+	color: white;
+	text-decoration: none;
+}
+
+#login_user, #login_pass,
+#login_rmbr, #login_rmbr_label,
+#login_submit, #login_rgstr {
+	position: absolute;
+}
+
+#login_user,
+#login_pass {
+	font-size: 1.8em;
+	width: 350px;
+}
+
+#login_user {
+	top: 100px;
+	left: 100px;
+}
+
+#login_pass {
+	top: 180px;
+	left: 100px;
+}
+
+#login_rmbr {
+	top: 260px;
+	left: 100px;
+}
+
+#login_rmbr_label {
+	top: 260px;
+	left: 120px;
+}
+
+#login_submit {
+	top: 254px;
+	left: 384px;
+	width: 101px;
+	height: 29px;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 1.5em;
+}
+
+#login_submit:hover {
+	background-color: #381F1F;
+}
+
+#login_rgstr {
+	top: 265px;
+	left: 340px;
 }
 
 #footer {
@@ -155,7 +212,6 @@ html, body {
 	display: inline;
 	height: 52px;
 	margin: 20px 50px;
-	cursor: pointer;
 }
 
 #footer_plurk {
