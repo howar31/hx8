@@ -11,64 +11,49 @@
 
 <body>
 <div id="wrap">
-<div id="nav">
-	<ul>
-		<li id="login" onClick="login_show()">LOGIN</li>
-	</ul>
-</div>
+	<div id="msg">歡迎回來，會員ID XXX</div>
 
-<div id="loginform">
-<form>
-	<p>
-	<label for="user">帳號</label><br>
-	<input type="text" id="user" />
-	</p>
-	<p>
-	<label for="pass">密碼</label><br>
-	<input type="text" id="pass" />
-	</p>
-</form>
-<a href="#">註冊</a>
-<div id="btn_login"></div>
-</div>
+	<div id="nav">
+		<ul id="nav_l">
+			<li id="nav_home">首頁</li>
+		</ul>
+		<ul id="nav_r">
+			<li id="nav_login">登入</li>
+			<li id="nav_personal">個人頁面</li>
+			<li id="nav_all">所有作品</li>
+			<li id="nav_detail">企劃詳細</li>
+		</ul>
+	</div>
+	
+	<img id="bgpic" src="./image/bgpic.png" />
 
-<script>
-function login_show(){
-	cur = document.getElementById('loginform').style.display;
-	document.getElementById("loginform").style.display=cur?"":"block";
-}
-</script>
+	<div id="content">
+		<img id="logo" src="./image/logo.png" />
 
-<div id="ytb"></div>
-<div id="content">
-<div id="text">
-<p>
-某日，這封沒有寫上寄件地址信件送到你的手中：
-</p>
-<p>
-　　您好，這裡是XXX研究機構，目前有個行為研究需要多名受測者，希望您協助我們重要實驗的進行。實驗進行期間我們將提供免費的吃住，並且由於實驗時間較長，結束後也將給與六位數的研究報酬金。
-</p>
-<p>
-　　如果您有興趣想了解詳細，請在以下時間，到以下地點，與我聯絡。
-</p>
-<span id="text_sign">人類行為與心理認知  佛薩克博士</span>
-<span class="clearboth"></span>
-<p id="text_attend">
-你要參加嗎？
-</p>
-</div>
-<div id="attendbtn"></div>
-<span class="clearboth"></span>
-<div id="btns">
-	<div id="btn_detail"></div>
-	<div id="btn_all"></div>
-	<div id="btn_about"></div>
-</div>
-</div>
-
-<div id="foot">
-&copy;2013 H8, All right reserved.
-</div>
+		<div id="ytb"><iframe width="570" height="320" src="//www.youtube.com/embed/eOQYNlCvoEs?rel=0" frameborder="0" allowfullscreen></iframe></div>
+		<div id="text">
+			<p>
+			您好，
+			</p>
+			<p>
+			目前有個行為研究需要多名受測者，希望您協助我們重要實驗的進行。<br>
+			實驗進行期間我們將提供免費的吃住，並且由於實驗時間較長，<br>
+			結束後也將給與六位數的研究報酬金。<br>
+			</p>
+			<p>
+			如果您有興趣想了解詳細，請在以下時間，到以下地點，與我聯絡。
+			</p>
+			<span class="clearboth"></span>
+			<div id="attendbtn"></div>
+			<div id="ruattend"></div>
+			<span class="clearboth"></span>
+		</div>
+	</div>
+	<div id="footer">
+		<img src='./image/H8-1_03.png' id='footer_plurk' />
+		<img src='./image/H8-1_05.png' id='footer_ask' />
+		<img src='./image/H8-1_07.png' id='footer_hx8' />
+	</div>
 
 </div>
 </body>
