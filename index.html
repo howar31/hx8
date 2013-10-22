@@ -31,13 +31,15 @@
 		</ul>
 		<ul id="nav_r">
 			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>
-			<li id="nav_personal">個人頁面你還是沒給圖</li>
+			<li id="nav_personal"><img src="./image/btn_personal.png" /></li>
 			<li id="nav_all"><img src="./image/btn_all.png" /></li>
 			<li id="nav_detail"><img src="./image/btn_detail.png" /></li>
 		</ul>
 	</div>
 	
 	<div class="simple_overlay" id="overlay_login">
+		<div id="login_title">登入</div>
+		<div id="login_hr"></div>
 		<form id="login_form">
 			<input type="text" id="login_user" placeholder="輸入帳號">
 			<input type="password" id="login_pass" placeholder="輸入密碼">
@@ -52,7 +54,7 @@
 			mask: {
 				color: '#000',
 				loadSpeed: 500,
-				opacity: 0.9
+				opacity: 0.8
 			},
 			onClose: function() {
 			}

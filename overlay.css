@@ -8,12 +8,12 @@
     z-index:10000;
  
     /* styling */
-//    background-color:#333;
-    background: url('./image/loginbg.png');
+    background-color:#1C1B1B;
  
-    width:551px;
-    min-height:322px;
-//    border:1px solid #666;
+    width:403px;
+    min-height:230px;
+    border:1px solid #666;
+    border-radius: 20px;
  
     /* CSS3 styling for latest browsers */
     -moz-box-shadow:0 0 90px 5px #000;
@@ -24,8 +24,8 @@
 .simple_overlay .close {
     background-image:url(./image/close.png);
     position:absolute;
-    right:-15px;
-    top:-15px;
+    right:15px;
+    top:15px;
     cursor:pointer;
     height:28px;
     width:28px;
