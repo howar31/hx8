@@ -39,35 +39,32 @@
 	
 	<div id="content">
 		<div id="char_frame">
-			<div id="char_form">
+			<div id="char_wrap">
 				<ul id="char_tab">
 					<li id="char_tab_text" rel="char_text" class="char_tab_title char_tab_active">文字版</li>
 					<li id="char_tab_pic" rel="char_pic" class="char_tab_title">圖片版</li>
 				</ul>
 				<div id="char_hr"></div>
-				<div id="char_text" class="char_tab_content char_content_active">
-					<form id="char_form_text">
-						<label for="char_name">*角色名稱</label><input type="text" id="char_name" placeholder="限制20字以內">
-						<label for="char_age">*年齡</label><input type="text" id="char_age" placeholder=""><br>
-						<label for="char_class">*身分(職業)</label><input type="text" id="char_class" placeholder="">
-						<label for="char_gender">*性別</label><input type="text" id="char_gender" placeholder=""><br>
-						<label for="char_mantra">角色台詞</label><input type="text" id="char_mantra" class="char_fullwidth" placeholder=""><br>
-						<label for="char_intro">*角色介紹</label><textarea type="text" id="char_intro" class="char_fullwidth" placeholder=""></textarea><br>
-						<label for="char_pic">*角色圖片</label><input type="text" id="char_pic" class="char_fullwidth" placeholder="圖片網址"><br>
-						<button id="char_pic_btn">從電腦上傳圖片</button><span id="char_upload_msg">已上傳圖片  大帥哥.PNG</span><br>
-						<label for="char_like">喜歡的東西</label><input type="text" id="char_like" class="char_fullwidth" placeholder=""><br>
-						<label for="char_hate">討厭的東西</label><input type="text" id="char_hate" class="char_fullwidth" placeholder=""><br>
-						<label for="char_expert">擅長</label><input type="text" id="char_expert" class="char_fullwidth" placeholder="">
+				<div id="char_content">
+					<form id="char_form">
+						<div class="char_text char_pic"><label for="char_name">*角色名稱</label><input type="text" id="char_name" placeholder="限制20字以內">
+						<label for="char_age">*年齡</label><input type="text" id="char_age" placeholder=""><br></div>
+						<div class="char_text char_pic"><label for="char_class">*身分(職業)</label><input type="text" id="char_class" placeholder="">
+						<label for="char_gender">*性別</label><input type="text" id="char_gender" placeholder=""><br></div>
+						<div class="char_text char_pic"><label for="char_mantra">角色台詞</label><input type="text" id="char_mantra" class="char_fullwidth" placeholder=""><br></div>
+						<div class="char_text char_pic"><label for="char_intro">*角色介紹</label><textarea type="text" id="char_intro" class="char_fullwidth" placeholder=""></textarea><br></div>
+						<div class="char_text"><label for="char_describe">*角色描述</label><textarea type="text" id="char_describe" class="char_fullwidth" placeholder=""></textarea><br></div>
+						<div class="char_pic"><label for="char_pic">*角色圖片</label><button id="char_pic_btn">從電腦上傳圖片</button><span id="char_upload_msg">已上傳圖片  大帥哥.PNG</span><br></div>
+						<div class="char_text char_pic"><label for="char_prefer">喜歡/討厭</label><input type="text" id="char_prefer" class="char_fullwidth" placeholder=""><br></div>
+						<div class="char_text char_pic"><label for="char_expert">擅長</label><input type="text" id="char_expert" class="char_fullwidth" placeholder=""></div>
+						<div class="char_text char_pic"><label for="char_team">隸屬隊伍</label><input type="text" id="char_team" class="char_fullwidth" placeholder="此區不需填寫，由管理員分配" disabled></div>
 						<input type="submit" id="char_submit" value="生成" />
-					</form>
-				</div>
-				<div id="char_pic" class="char_tab_content">
-					<form id="char_form_pic">
 					</form>
 				</div>
 			</div>
 			<div id="char_preview">
-				<img src="./image/char_card_example_text.png" />
+				<img src="./image/char_card_example_text.png" id="char_text_img" class="char_active">
+				<img src="./image/char_card_example_pic.png" id="char_pic_img">
 			</div>
 		</div>
 	</div>
@@ -75,10 +72,16 @@
 
 <script>
 	$(".char_tab_title").click(function(){
+		// Tab color transition
 		$(".char_tab_title").removeClass("char_tab_active");
 		$(this).addClass("char_tab_active");
-		$(".char_tab_content").removeClass("char_content_active");
-		$("#"+$(this).attr("rel")).addClass("char_content_active");
+		// Content switch
+		$(".char_text").hide();
+		$(".char_pic").hide();
+		$("."+$(this).attr("rel")).show();
+		// Picture switch
+		$("#char_preview img").removeClass("char_active");
+		$("#"+$(this).attr("rel")+"_img").addClass("char_active");
 	});
 </script>
 </body>
