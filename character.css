@@ -26,6 +26,7 @@
 	height: 40px;
 	list-style: none;
 	font-size: 1.3em;
+	color: #CCC;
 }
 
 .char_tab_title {
@@ -118,18 +119,15 @@
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
-	width: 90px;
-	height: 35px;
-	border: 3px groove #222;
-	border-radius: 5px;
-	background: none;
-	color: white;
-	font-size: 1em;
+	width: 111px;
+	height: 40px;
+	border: none; 
 	cursor: pointer;
+	background: url('./image/char_submit.png');
 }
 
 #char_submit:hover {
-	background-color: #381F1F;
+	background: url('./image/char_submit_hover.png');
 }
 
 #char_preview {
