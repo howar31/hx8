@@ -42,7 +42,7 @@ html, body {
 
 #logo {
 	position: absolute;
-	top: 115px;
+	top: 60px;
 	left: 455px;
 	width: 800px;
 	height: 458px;
@@ -51,6 +51,7 @@ html, body {
 #content {
 	position: relative;
 	height: 800px;
+	top: 55px;
 }
 
 #pics img {
@@ -104,7 +105,7 @@ html, body {
 	position: absolute;
 	width: 570px;
 	height: 320px;
-	top: 440px;
+	top: 385px;
 	left: 50px;
 }
 
@@ -112,7 +113,7 @@ html, body {
 	position: absolute;
 	height: 340px;
 	width: 720px;
-	top: 440px;
+	top: 385px;
 	left: 540px;
 	color: white;
 	text-align: right;
