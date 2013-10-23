@@ -66,6 +66,7 @@
 #char_preview img,
 .char_pic {
 	display: none;
+	width: 540px;
 }
 
 .char_text {
