@@ -142,8 +142,8 @@ html, body {
 }
 
 #overlay_login {
-	position: relative;
-	color: white;
+	width:403px;
+	min-height:230px;
 }
 
 #overlay_login a {
@@ -221,6 +221,11 @@ html, body {
 #login_rgstr {
 	top: 185px;
 	left: 240px;
+}
+
+#overlay_contract {
+	width:403px;
+	min-height:230px;
 }
 
 #footer {

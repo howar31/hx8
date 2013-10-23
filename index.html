@@ -48,8 +48,21 @@
 		</form>
 		<a href="#" id="login_rgstr">註冊</a>
 	</div>
+	<div class="simple_overlay" id="overlay_contract">
+	</div>
 	<script>
 		$("img[rel]").overlay({
+			top: 260,
+			mask: {
+				color: '#000',
+				loadSpeed: 500,
+				opacity: 0.8
+			},
+			onClose: function() {
+			}
+		});
+
+		$("#attendbtn").overlay({
 			top: 260,
 			mask: {
 				color: '#000',
