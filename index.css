@@ -57,7 +57,6 @@
 	text-decoration: none;
 }
 
-.popup_title, .popup_hr,
 #login_user, #login_pass,
 #login_rmbr, #login_rmbr_label,
 #login_submit, #login_rgstr,
@@ -65,26 +64,6 @@
 	position: absolute;
 }
 
-.popup_title,
-#hx8_title {
-	top: 15px;
-	left: 25px;
-	font-size: 1.3em;
-}
-
-.popup_hr {
-	top: 50px;
-	border-top: 1px solid #666;
-	border-bottom: 1px solid #666;
-	width: 100%;
-	height: 2px;
-}
-
-.popup_content {
-	position: absolute;
-	top: 50px;
-	padding: 15px;
-}
 
 #login_user,
 #login_pass {
@@ -143,10 +122,6 @@
 	height: 700px;
 }
 
-#contract_content {
-	line-height: 30px;
-}
-
 #contract_agree {
 	position: absolute;
 	bottom: 20px;
@@ -158,9 +133,4 @@
 
 #contract_agree:hover {
 	background-color: #381F1F;
-}
-
-#overlay_hx8 {
-	width: 600px;
-	height: 400px;
 }

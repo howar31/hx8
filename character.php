@@ -1,14 +1,9 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="charset=utf-8">
 
-<link rel="stylesheet" type="text/css" href="./general.css"/>
+<? require_once("./include/config.php"); ?>
 <link rel="stylesheet" type="text/css" href="./character.css"/>
-<link rel="stylesheet" type="text/css" href="./overlay.css"/>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 
 <title>HX8</title>
 
@@ -16,27 +11,20 @@
 
 <body>
 <div id="wrap">
-	<div id="pics">
-		<img id="frame_top" src="./image/frame_top.png" />
-		<img id="frame_bot" src="./image/frame_bot.png" />
-		<img id="bg_top" src="./image/bg_top.png" />
-		<img id="bg_bot" src="./image/bg_bot.png" />
-	</div>
-
-	<div id="msg">歡迎回來，會員ID XXX</div>
-
+	<? require_once("./include/header.php"); ?>
+	
 	<div id="nav">
 		<ul id="nav_l">
 			<li id="nav_home"><a href="./"><img src="./image/btn_home.png" /></a></li>
 		</ul>
 		<ul id="nav_r">
-			<li id="nav_logout"><img src="./image/btn_logout.png" /></li>
+			<li id="nav_login"><img src="./image/btn_logout.png" /></li>
 			<li id="nav_personal"><img src="./image/btn_personal.png" /></li>
 			<li id="nav_all"><img src="./image/btn_all.png" /></li>
 			<li id="nav_detail"><img src="./image/btn_detail.png" /></li>
 		</ul>
 	</div>
-	
+
 	<div id="content">
 		<div id="char_frame">
 			<div id="char_wrap">
@@ -68,11 +56,8 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
-		<a href="http://plurk.com/hx8" target="_blank"><img src='./image/H8-1_03.png' id='footer_plurk' /></a>
-		<a href="http://ask.fm/hx8iris" target="_blank"><img src='./image/H8-1_05.png' id='footer_ask' /></a>
-		<img src='./image/H8-1_07.png' id='footer_hx8' />
-	</div>
+
+	<? require_once("./include/footer.php"); ?>
 </div>
 
 <script>
