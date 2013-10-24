@@ -17,9 +17,9 @@
 #text {
 	position: absolute;
 	height: 340px;
-	width: 720px;
+	width: 630px;
 	top: 385px;
-	left: 540px;
+	left: 630px;
 	color: white;
 	text-align: right;
 	line-height: 1.8em;
@@ -27,7 +27,7 @@
 
 #ruattend {
 	position: absolute;
-	left: 275px;
+	left: 185px;
 	top: 270px;
 }
 
@@ -39,7 +39,7 @@
 	height: 115px;
 	width: 115px;
 	top: 200px;
-	left: 585px;
+	left: 495px;
 	cursor: pointer;
 }
 
@@ -48,8 +48,8 @@
 }
 
 #overlay_login {
-	width:403px;
-	min-height:230px;
+	width: 403px;
+	height: 230px;
 }
 
 #overlay_login a {
@@ -57,25 +57,33 @@
 	text-decoration: none;
 }
 
-#login_title, #login_hr,
+.popup_title, .popup_hr,
 #login_user, #login_pass,
 #login_rmbr, #login_rmbr_label,
-#login_submit, #login_rgstr {
+#login_submit, #login_rgstr,
+#hx8_title, #hx8_hr {
 	position: absolute;
 }
 
-#login_title {
+.popup_title,
+#hx8_title {
 	top: 15px;
 	left: 25px;
 	font-size: 1.3em;
 }
 
-#login_hr {
+.popup_hr {
 	top: 50px;
 	border-top: 1px solid #666;
 	border-bottom: 1px solid #666;
 	width: 100%;
 	height: 2px;
+}
+
+.popup_content {
+	position: absolute;
+	top: 50px;
+	padding: 15px;
 }
 
 #login_user,
@@ -88,32 +96,33 @@
 }
 
 #login_user {
-	top: 75px;
+	top: 25px;
 }
 
 #login_pass {
-	top: 125px;
+	top: 75px;
 }
 
 #login_rmbr {
-	top: 185px;
+	top: 135px;
 	left: 25px;
 	cursor: pointer;
 }
 
 #login_rmbr_label {
-	top: 185px;
+	top: 135px;
 	left: 45px;
+	width: 80px;
 	cursor: pointer;
 }
 
 #login_submit {
-	top: 175px;
+	top: 125px;
 	left: 285px;
 	width: 90px;
-	height: 35px;
-	border: 3px groove #222;
-	border-radius: 5px;
+	height: 40px;
+	border: 5px groove #222;
+	border-radius: 10px;
 	background: none;
 	color: white;
 	font-size: 1.3em;
@@ -130,6 +139,28 @@
 }
 
 #overlay_contract {
-	width:403px;
-	min-height:230px;
+	width: 600px;
+	height: 700px;
+}
+
+#contract_content {
+	line-height: 30px;
+}
+
+#contract_agree {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 5px 30px;
+	border: 5px groove #222;
+	border-radius: 10px;
+}
+
+#contract_agree:hover {
+	background-color: #381F1F;
+}
+
+#overlay_hx8 {
+	width: 600px;
+	height: 400px;
 }

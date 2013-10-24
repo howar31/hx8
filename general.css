@@ -118,6 +118,7 @@ html, body {
 
 #footer_hx8 {
 	width: 110px;
+	cursor: pointer;
 }
 
 .clearboth {

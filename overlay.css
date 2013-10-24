@@ -48,3 +48,6 @@
   font-size:15px;
   }
   
+#exposeMask {
+	position: fixed !important;
+}
