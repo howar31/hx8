@@ -54,22 +54,15 @@
 
 /**********/
 
-#overlay_hx8 {
-	width: 600px;
-	height: 400px;
-}
-#hx8_content {
-	line-height: 30px;
-}
-
-.popup_title {
+.overlay_title {
 	position: absolute;
 	top: 15px;
 	left: 25px;
 	font-size: 1.3em;
+	font-family: 'wt002';
 }
 
-.popup_hr {
+.overlay_hr {
 	position: absolute;
 	top: 50px;
 	border-top: 1px solid #666;
@@ -78,8 +71,27 @@
 	height: 2px;
 }
 
-.popup_content {
+.overlay_content {
 	position: absolute;
 	top: 50px;
 	padding: 15px;
+}
+
+/**********/
+
+#overlay_hx8 {
+	width: 600px;
+	height: 400px;
+}
+#hx8_content {
+	line-height: 29px;
+	padding: 15px 50px;
+}
+
+#overlay_trollpi {
+	width: 350px;
+	height: 150px;
+}
+#trollpi_content {
+	padding: 15px 25px;
 }

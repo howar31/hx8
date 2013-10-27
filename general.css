@@ -9,10 +9,9 @@ html, body {
 	margin: 0px;
 	background-color: #1C1B1B;
 	min-width: 1440px;
-	overflow-x: hidden;
 	position: relative;
 	z-index: -10;
-	font-family: 'wt002';
+	font-family: '華康中黑體', '微軟正黑體', 'wt002';
 }
 
 #wrap {

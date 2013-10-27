@@ -19,7 +19,7 @@
 		</ul>
 		<ul id="nav_r">
 			<li id="nav_login"><img src="./image/btn_logout.png" /></li>
-			<li id="nav_personal"><img src="./image/btn_personal.png" /></li>
+			<li id="nav_member"><img src="./image/btn_member.png" /></li>
 			<li id="nav_all"><img src="./image/btn_all.png" /></li>
 			<li id="nav_detail"><img src="./image/btn_detail.png" /></li>
 		</ul>
@@ -45,7 +45,7 @@
 						<div class="char_pic"><label for="char_pic">*角色圖片</label><button id="char_pic_btn" title="限制 426px * 520px 以內">從電腦上傳圖片</button><span id="char_upload_msg">已上傳圖片  大帥哥.PNG</span><br></div>
 						<div class="char_text char_pic"><label for="char_prefer">喜歡/討厭</label><input type="text" id="char_prefer" class="char_fullwidth" placeholder="限制13字以內" maxlength="13"><br></div>
 						<div class="char_text char_pic"><label for="char_expert">擅長</label><input type="text" id="char_expert" class="char_fullwidth" placeholder="限制15字以內" maxlength="15"></div>
-						<div class="char_text char_pic"><label for="char_team">隸屬隊伍</label><input type="text" id="char_team" class="char_fullwidth" placeholder="此區不需填寫，由管理員分配" disabled></div>
+						<div class="char_text char_pic"><label for="char_team">隸屬隊伍</label><input type="text" id="char_team" class="char_fullwidth" placeholder="單人報名玩家此區請留白"></div>
 						<input type="submit" id="char_submit" value="" />
 					</form>
 				</div>

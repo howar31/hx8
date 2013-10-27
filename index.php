@@ -18,10 +18,11 @@
 			<li id="nav_home"><a href="./"><img src="./image/btn_home.png" /></a></li>
 		</ul>
 		<ul id="nav_r">
-			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>
-			<li id="nav_personal"><img src="./image/btn_personal.png" /></li>
-			<li id="nav_all"><img src="./image/btn_all.png" /></li>
-			<li id="nav_detail"><img src="./image/btn_detail.png" /></li>
+<!--			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>-->
+			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_trollpi"/></li>
+			<li id="nav_member"><img src="./image/btn_member.png" rel="#overlay_trollpi"/></li>
+			<li id="nav_all"><img src="./image/btn_all.png" rel="#overlay_trollpi"/></li>
+			<li id="nav_detail"><a href="http://h8-cos.weebly.com" target="_blank"><img src="./image/btn_detail.png" /></a></li>
 		</ul>
 	</div>
 
@@ -43,7 +44,8 @@
 			</p>
 			<span class="clearboth"></span>
 			<img id="ruattend" src="./image/ruattend.png" />
-			<div id="attendbtn" rel="#overlay_contract"></div>
+<!--			<div id="attendbtn" rel="#overlay_contract"></div>-->
+			<div id="attendbtn" rel="#overlay_trollpi"></div>
 			<span class="clearboth"></span>
 		</div>
 	</div>
@@ -51,9 +53,9 @@
 	<? require_once("./include/footer.php"); ?>
 
 	<div class="simple_overlay" id="overlay_login">
-		<div class="popup_title">登入</div>
-		<div class="popup_hr"></div>
-		<div class="popup_content">
+		<div class="overlay_title">登入</div>
+		<div class="overlay_hr"></div>
+		<div class="overlay_content">
 			<form id="login_form">
 				<input type="text" id="login_user" placeholder="輸入帳號">
 				<input type="password" id="login_pass" placeholder="輸入密碼">
@@ -65,9 +67,9 @@
 	</div>
 
 	<div class="simple_overlay" id="overlay_contract">
-		<div class="popup_title">合約</div>
-		<div class="popup_hr"></div>
-		<div class="popup_content">
+		<div class="overlay_title">合約</div>
+		<div class="overlay_hr"></div>
+		<div class="overlay_content">
 			<p>
 			Blah Blah Blah ~~~
 			<p>
