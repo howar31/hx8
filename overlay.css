@@ -59,7 +59,8 @@
 	top: 15px;
 	left: 25px;
 	font-size: 1.3em;
-	font-family: 'wt002';
+	font-weight: bold;
+	color: #CCC;
 }
 
 .overlay_hr {

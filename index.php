@@ -22,7 +22,7 @@
 			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_trollpi"/></li>
 			<li id="nav_member"><img src="./image/btn_member.png" rel="#overlay_trollpi"/></li>
 			<li id="nav_all"><img src="./image/btn_all.png" rel="#overlay_trollpi"/></li>
-			<li id="nav_detail"><a href="http://h8-cos.weebly.com" target="_blank"><img src="./image/btn_detail.png" /></a></li>
+			<li id="nav_detail"><a href="http://h8-cos.weebly.com"><img src="./image/btn_detail.png" /></a></li>
 		</ul>
 	</div>
 
