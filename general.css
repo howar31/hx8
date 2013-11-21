@@ -37,11 +37,11 @@ html, body {
 	z-index: -1;
 }
 
-#frame_top { top: 0px;   }
-#frame_bot { top: 650px; }
-#bg_top    { top: 0px;   }
-#bg_mid    { top: 110px;  left: -205px; }
-#bg_bot    { top: 510px; }
+#frame_top { top: -18px;	}
+#frame_bot { top: 650px;	}
+#bg_top    { top: 0px;		}
+#bg_mid    { top: 110px;	left: -205px;	}
+#bg_bot    { top: 510px;	}
 
 #msg {
 	color: white;

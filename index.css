@@ -122,6 +122,13 @@
 	height: 700px;
 }
 
+#signinButton {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/*
 #contract_agree {
 	position: absolute;
 	bottom: 20px;
@@ -130,6 +137,7 @@
 	border: 5px groove #222;
 	border-radius: 10px;
 }
+*/
 
 #contract_agree:hover {
 	background-color: #381F1F;

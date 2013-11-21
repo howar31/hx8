@@ -18,10 +18,10 @@
 			<li id="nav_home"><a href="./"><img src="./image/btn_home.png" /></a></li>
 		</ul>
 		<ul id="nav_r">
-<!--			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>-->
-			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_trollpi"/></li>
-			<li id="nav_member"><img src="./image/btn_member.png" rel="#overlay_trollpi"/></li>
-			<li id="nav_all"><img src="./image/btn_all.png" rel="#overlay_trollpi"/></li>
+<?//			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_login"/></li>?>
+<?//			<li id="nav_login"><img src="./image/btn_login.png" rel="#overlay_trollpi"/></li>?>
+<?//			<li id="nav_member"><img src="./image/btn_member.png" rel="#overlay_trollpi"/></li>?>
+			<li id="nav_all"><a href="http://h8-cos.tumblr.com/"><img src="./image/btn_all.png" /></a></li>
 			<li id="nav_detail"><a href="http://h8-cos.weebly.com"><img src="./image/btn_detail.png" /></a></li>
 		</ul>
 	</div>
@@ -44,8 +44,7 @@
 			</p>
 			<span class="clearboth"></span>
 			<img id="ruattend" src="./image/ruattend.png" />
-<!--			<div id="attendbtn" rel="#overlay_contract"></div>-->
-			<div id="attendbtn" rel="#overlay_trollpi"></div>
+			<div id="attendbtn" rel="#overlay_contract"></div>
 			<span class="clearboth"></span>
 		</div>
 	</div>
@@ -67,14 +66,24 @@
 	</div>
 
 	<div class="simple_overlay" id="overlay_contract">
-		<div class="overlay_title">合約</div>
+		<div class="overlay_title">注意事項</div>
 		<div class="overlay_hr"></div>
 		<div class="overlay_content">
 			<p>
 			Blah Blah Blah ~~~
 			<p>
 		</div>
-		<a href="./character.php"><img src="./image/ok.png" id="contract_agree" /></a>
+		<span id="signinButton">
+		  <span
+		    class="g-signin"
+		    data-callback="signinCallback"
+		    data-clientid="392417094478-59sf0tutemad9vobajlo6t1mmreibn36.apps.googleusercontent.com"
+		    data-cookiepolicy="single_host_origin"
+		    data-requestvisibleactions="http://schemas.google.com/AddActivity"
+		    data-scope="https://www.googleapis.com/auth/plus.login">
+		  </span>
+		</span>
+<?//		<a href="./character.php"><img src="./image/ok.png" id="contract_agree" /></a>?>
 	</div>
 
 	<script>
@@ -97,6 +106,16 @@
 		});
 	</script>
 </div>
+
+ <!-- Place this asynchronous JavaScript just before your </body> tag -->
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
+
 </body>
 
 </html>
