@@ -45,7 +45,7 @@
 						<div class="char_pic"><label for="char_pic">*角色圖片</label>
 <!--<button id="char_pic_btn" title="限制 426px * 520px 以內">從電腦上傳圖片</button>-->
 <input type="file" name="file" id="file"><br>
-<span id="char_upload_msg">已上傳圖片  大帥哥.PNG</span><br></div>
+<span id="char_upload_msg"></span><br></div>
 						<div class="char_text char_pic"><label for="char_prefer">喜歡/討厭</label><input type="text" id="char_prefer" class="char_fullwidth" placeholder="限制13字以內" maxlength="13"><br></div>
 						<div class="char_text char_pic"><label for="char_expert">擅長</label><input type="text" id="char_expert" class="char_fullwidth" placeholder="限制15字以內" maxlength="15"></div>
 						<div class="char_text char_pic"><label for="char_team">隸屬隊伍</label><input type="text" id="char_team" class="char_fullwidth" placeholder="單人報名玩家此區請留白"></div>
