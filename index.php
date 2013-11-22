@@ -94,7 +94,7 @@
 				<input type="text" name="entry.484144558" value="" class="ss-q-short" id="entry_484144558" dir="auto" aria-label="玩家名稱  " aria-required="true" required="" title="">
 
 				</div></div></div> <div class="ss-form-question errorbox-good">
-				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_316601924"><div class="ss-q-title">Email
+				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_316601924"><div class="ss-q-title">電子信箱
 				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
 				<span class="ss-required-asterisk">*</span></div>
 				<input type="email" name="entry.316601924" value="" class="ss-q-short" id="entry_316601924" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="請輸入正確格式的email">
@@ -126,7 +126,7 @@
 			</div>
 			<div id="done_content_wrap">
 				<p>
-				大大你已經填完辣！感謝歐歐 <3
+				您已經填過玩家基本資料，請收到官方回信之後開始生成角色卡。
 				</p>
 			</div>
 		</div>
@@ -189,7 +189,7 @@ function getshxt(json) {
 
 function checkshxt(thegid) {
 	for (var i = 0; i < Formed.length; i++) {
-		if (thegid === Formed[i]) return true;
+		if (thegid == Formed[i]) return true;
 	}
 	return false;
 }
@@ -207,7 +207,7 @@ function signinCallback(authResult) {
 				Gimageurl = resp.image.url;
 				Gurl = resp.url;
 				$('#msg_content').html('<img src="'+resp.image.url+'" id="msg_avatar"><a href="'+resp.url+'" target="_blank" id="msg_user">'+resp.displayName+'</a>');
-				if (checkshxt(resp.id)) {
+				if (checkshxt(Guserid)) {
 					$('#contract_form_title').html('報名已經完成！');
 					$('#done_content_wrap').show();
 				} else {
@@ -258,7 +258,7 @@ $("#msg_logout").click(function(){
       });
 });
     </script>
-<script type='text/javascript' src='https://spreadsheets.google.com/feeds/list/0AvPZ-eeLNBs9dDBhLUVQTjhxcENuMjNhUDVGb2pTclE/od6/public/basic?alt=json-in-script&callback=getshxt'></script>
+<script type='text/javascript' src='https://spreadsheets.google.com/feeds/list/0AvPZ-eeLNBs9dGIxbEVRc01KODY1S01RdXV0azhFVVE/od6/public/basic?alt=json-in-script&callback=getshxt'></script>
 
 </body>
 
