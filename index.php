@@ -71,12 +71,63 @@
 		<div class="overlay_hr"></div>
 		<div class="overlay_content">
 			<div id="contract_content_wrap">
-			<p>
-			注意事項是挹注意事項是挹注
-			<p>
+				<ol>
+					<li>「密室Chamber of Secret」為創作企劃，是透過創作和互動來進行的一種活動。</li>
+					<li>創作時可以使用到任何官方提供的素材，唯不提供商業營利目的，若有要出本出刊，請替換掉官方的圖文。</li>
+					<li>由於本次是有劇情的短期、分組企劃，進度更新的速度相較長期企劃會快很多，請玩家評估自己時間後再報名。</li>
+					<li>請尊重其他玩家，要使用對方的角色進行創作之前務必徵得他人同意。</li>
+					<li>官方可判定角色死亡的原因有三種：1.企劃結束前沒離開密室 2.兩次沒參與主線投票 3.被同組玩家集體投訴。</li>
+					<li>本企劃具有攻擊性，可能會導致玩家的角色受傷、肢體殘缺、死亡，請玩家放開心胸參與。</li>
+					<li>玩家之間若出現爭執請私下處理，無法處理時才聯絡官方，官方的做法比較強硬，聯絡官方絕對為最後的選擇。</li>
+				</ol>
+				<p>
+					若您同意以上事項，請登入開始填寫基本資料。若不同意，可點擊右上角離開。
+				</p>
+				<p>
 			</div>
 			<div id="form_content_wrap">
-			這是表格!
+				<form action="https://docs.google.com/forms/d/1edV3HEZpLXVqoqjqDj3iV4ORc1ZkDwE1SpWbD04pKdA/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="document.getElementById('entry_537469191').value=Guserid;"><ol style="padding-left: 0">
+				<div class="ss-form-question errorbox-good">
+				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_484144558"><div class="ss-q-title">玩家名稱
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<span class="ss-required-asterisk">*</span></div>
+				<input type="text" name="entry.484144558" value="" class="ss-q-short" id="entry_484144558" dir="auto" aria-label="玩家名稱  " aria-required="true" required="" title="">
+
+				</div></div></div> <div class="ss-form-question errorbox-good">
+				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_316601924"><div class="ss-q-title">Email
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<span class="ss-required-asterisk">*</span></div>
+				<input type="email" name="entry.316601924" value="" class="ss-q-short" id="entry_316601924" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="請輸入正確格式的email">
+
+				</div></div></div> <div class="ss-form-question errorbox-good">
+				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_1065566203"><div class="ss-q-title">主要使用的噗浪
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<span class="ss-required-asterisk">*</span></div>
+				<input type="url" name="entry.1065566203" value="" class="ss-q-short" id="entry_1065566203" dir="auto" aria-label="主要使用的噗浪 請填寫噗浪網址 Must be a valid URL" aria-required="true" required="" title="請輸入正確格式的URL網址" placeholder="請填寫噗浪網址">
+
+				</div></div></div> <div class="ss-form-question errorbox-good">
+				<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_732704579"><div class="ss-q-title">這次企劃使用的噗浪
+				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+				<span class="ss-required-asterisk">*</span></div>
+				<input type="url" name="entry.732704579" value="" class="ss-q-short" id="entry_732704579" dir="auto" aria-label="這次企劃使用的噗浪 請填寫噗浪網址 Must be a valid URL" aria-required="true" required="" title="請輸入正確格式的URL網址" placeholder="請填寫噗浪網址">
+
+				</div></div></div> <div class="ss-form-question errorbox-good">
+				<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label aria-hidden class="ss-q-item-label aria-todo" for="entry_824878209"><div class="ss-q-title">若有事先組隊，隊伍名稱是？(沒有則填寫無組隊)</div>
+				<input type="text" name="entry.824878209" value="無組隊" class="ss-q-short" id="entry_824878209" dir="auto" aria-label="若有事先組隊，隊伍名稱是？(沒有則填寫無組隊)  " title="">
+
+				</div></div></div>
+				<input type="hidden" name="entry.537469191" value="" class="ss-q-short" id="entry_537469191" dir="auto" aria-label="GID  " title="">
+				<input type="hidden" name="draftResponse" value="[]">
+				<input type="hidden" name="pageHistory" value="0">
+
+				<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+				<input type="submit" name="submit" value="Submit" id="ss-submit">
+				</tr></tbody></table></div></ol></form>
+			</div>
+			<div id="done_content_wrap">
+				<p>
+				大大你已經填完辣！感謝歐歐 <3
+				</p>
 			</div>
 		</div>
 		<span id="signinButton">
@@ -89,7 +140,6 @@
 		    data-scope="https://www.googleapis.com/auth/plus.login">
 		  </span>
 		</span>
-<?//		<a href="./character.php" id="contract_agree"><img src="./image/ok.png"/></a>?>
 	</div>
 
 	<script>
@@ -121,6 +171,29 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
      })();
 
+var Guserid;
+var Gdisplayname;
+var Gimageurl;
+var Gurl;
+var Formed=new Array;
+
+function getshxt(json) {
+  var a = json.feed.entry.length;
+  for (var i = 0; i < a; i++) {
+    var b = json.feed.entry[i].content.$t;
+    var getgidstr=b;
+    Formed.push(getgidstr.substring(getgidstr.indexOf("gid: ")+5));
+//	console.log(Formed);
+  }
+}
+
+function checkshxt(thegid) {
+	for (var i = 0; i < Formed.length; i++) {
+		if (thegid === Formed[i]) return true;
+	}
+	return false;
+}
+
 function signinCallback(authResult) {
 	gapi.client.load('plus','v1', function(){
 		if (authResult['access_token']) {
@@ -129,17 +202,21 @@ function signinCallback(authResult) {
 				'userId': 'me'
 			});
 			request.execute(function(resp) {
-				console.log('ID: ' + resp.id);
-				console.log('Display Name: ' + resp.displayName);
-				console.log('Image URL: ' + resp.image.url);
-				console.log('Profile URL: ' + resp.url);
+				Guserid = resp.id;
+				Gdisplayname = resp.displayName;
+				Gimageurl = resp.image.url;
+				Gurl = resp.url;
 				$('#msg_content').html('<img src="'+resp.image.url+'" id="msg_avatar"><a href="'+resp.url+'" target="_blank" id="msg_user">'+resp.displayName+'</a>');
-				$('#contract_form_title').html('報名表格');
+				if (checkshxt(resp.id)) {
+					$('#contract_form_title').html('報名已經完成！');
+					$('#done_content_wrap').show();
+				} else {
+					$('#contract_form_title').html('報名表格');
+					$('#form_content_wrap').show();
+				}
 				$('#msg_logout').show();
 				$('#signinButton').hide();
-				$('#contract_agree').show();
 				$('#contract_content_wrap').hide();
-				$('#form_content_wrap').show();
 			});
 		} else if (authResult['error']) {
 			//   "user_signed_out" - User is signed-out
@@ -168,8 +245,8 @@ $("#msg_logout").click(function(){
         success: function(result) {
           console.log('revoke response: ' + result);
 	  $('#contract_form_title').html('注意事項');
-	  $('#contract_agree').hide();
 	  $('#form_content_wrap').hide();
+	  $('#done_content_wrap').hide();
 	  $('#contract_content_wrap').show();
 	  $('#msg_logout').hide();
 	  $('#signinButton').show();
@@ -181,6 +258,7 @@ $("#msg_logout").click(function(){
       });
 });
     </script>
+<script type='text/javascript' src='https://spreadsheets.google.com/feeds/list/0AvPZ-eeLNBs9dDBhLUVQTjhxcENuMjNhUDVGb2pTclE/od6/public/basic?alt=json-in-script&callback=getshxt'></script>
 
 </body>
 

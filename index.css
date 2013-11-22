@@ -119,14 +119,18 @@
 
 #overlay_contract {
 	width: 600px;
-	height: 700px;
+	height: 600px;
 }
 
 #contract_content_wrap {
+	line-height: 1.8em;
 }
 
-#form_content_wrap {
+#form_content_wrap,
+#done_content_wrap {
 	display: none;
+	height: 500px;
+	width: 570px;
 }
 
 #signinButton {
@@ -146,5 +150,39 @@
 }
 
 #contract_agree:hover {
+	background-color: #381F1F;
+}
+
+
+.ss-q-title {
+	font-size: 1.1em;
+}
+
+.ss-q-short {
+	width: 100%;
+	font-size: 1.5em;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.ss-form-entry {
+	margin: 15px 0px;
+}
+
+#ss-submit {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 6px 3px;
+	border: 5px groove #222;
+	border-radius: 10px;
+	background-image: url('./image/ok.png');
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+	cursor: pointer;
+}
+
+#ss-submit:hover {
 	background-color: #381F1F;
 }
