@@ -122,14 +122,21 @@
 	height: 700px;
 }
 
+#contract_content_wrap {
+}
+
+#form_content_wrap {
+	display: none;
+}
+
 #signinButton {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
 }
 
-/*
 #contract_agree {
+	display: none;
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -137,7 +144,6 @@
 	border: 5px groove #222;
 	border-radius: 10px;
 }
-*/
 
 #contract_agree:hover {
 	background-color: #381F1F;

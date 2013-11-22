@@ -4,6 +4,7 @@
 
 <? require_once("./include/config.php"); ?>
 <link rel="stylesheet" type="text/css" href="./index.css"/>
+<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
 
 <title>HX8</title>
 
@@ -66,12 +67,17 @@
 	</div>
 
 	<div class="simple_overlay" id="overlay_contract">
-		<div class="overlay_title">注意事項</div>
+		<div class="overlay_title" id="contract_form_title">注意事項</div>
 		<div class="overlay_hr"></div>
 		<div class="overlay_content">
+			<div id="contract_content_wrap">
 			<p>
-			Blah Blah Blah ~~~
+			注意事項是挹注意事項是挹注
 			<p>
+			</div>
+			<div id="form_content_wrap">
+			這是表格!
+			</div>
 		</div>
 		<span id="signinButton">
 		  <span
@@ -83,7 +89,7 @@
 		    data-scope="https://www.googleapis.com/auth/plus.login">
 		  </span>
 		</span>
-<?//		<a href="./character.php"><img src="./image/ok.png" id="contract_agree" /></a>?>
+<?//		<a href="./character.php" id="contract_agree"><img src="./image/ok.png"/></a>?>
 	</div>
 
 	<script>
@@ -116,21 +122,64 @@
      })();
 
 function signinCallback(authResult) {
-  if (authResult['access_token']) {
-    // Update the app to reflect a signed in user
-    // Hide the sign-in button now that the user is authorized, for example:
-//    document.getElementById('signinButton').setAttribute('style', 'display: none');
-alert('success');
-  } else if (authResult['error']) {
-    // Update the app to reflect a signed out user
-    // Possible error values:
-    //   "user_signed_out" - User is signed-out
-    //   "access_denied" - User denied access to your app
-    //   "immediate_failed" - Could not automatically log in the user
-//    console.log('Sign-in state: ' + authResult['error']);
-alert('Sign-in state: ' + authResult['error']);
-  }
+	gapi.client.load('plus','v1', function(){
+		if (authResult['access_token']) {
+			//    document.getElementById('signinButton').setAttribute('style', 'display: none');
+			var request = gapi.client.plus.people.get ({
+				'userId': 'me'
+			});
+			request.execute(function(resp) {
+				console.log('ID: ' + resp.id);
+				console.log('Display Name: ' + resp.displayName);
+				console.log('Image URL: ' + resp.image.url);
+				console.log('Profile URL: ' + resp.url);
+				$('#msg_content').html('<img src="'+resp.image.url+'" id="msg_avatar"><a href="'+resp.url+'" target="_blank" id="msg_user">'+resp.displayName+'</a>');
+				$('#contract_form_title').html('報名表格');
+				$('#msg_logout').show();
+				$('#signinButton').hide();
+				$('#contract_agree').show();
+				$('#contract_content_wrap').hide();
+				$('#form_content_wrap').show();
+			});
+		} else if (authResult['error']) {
+			//   "user_signed_out" - User is signed-out
+			//   "access_denied" - User denied access to your app
+			//   "immediate_failed" - Could not automatically log in the user
+			switch(authResult['error']) {
+				case 'user_signed_out':
+				break;
+				case 'access_denied':
+				break;
+				case 'immediate_failed':
+				break;
+			}
+		}
+//		console.log('authResult', authResult);
+	});
 }
+$("#msg_logout").click(function(){
+	 $.ajax({
+        type: 'GET',
+        url: 'https://accounts.google.com/o/oauth2/revoke?token=' +
+            gapi.auth.getToken().access_token,
+        async: false,
+        contentType: 'application/json',
+        dataType: 'jsonp',
+        success: function(result) {
+          console.log('revoke response: ' + result);
+	  $('#contract_form_title').html('注意事項');
+	  $('#contract_agree').hide();
+	  $('#form_content_wrap').hide();
+	  $('#contract_content_wrap').show();
+	  $('#msg_logout').hide();
+	  $('#signinButton').show();
+	  $('#msg_content').html('成功登出');
+        },
+        error: function(e) {
+          console.log(e);
+        }
+      });
+});
     </script>
 
 </body>

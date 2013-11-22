@@ -50,6 +50,23 @@ html, body {
 	top: 30px;
 }
 
+#msg_user {
+	text-decoration: none;
+	color: white;
+}
+
+#msg_avatar {
+	height: 15px;
+}
+
+#msg_logout {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
 #nav {
 	color: white;
 	font-size: 1.2em;
