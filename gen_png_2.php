@@ -23,9 +23,9 @@
 	// if($char_describe==""){
 	if($char_type=="char_pic"){
 		//file
-		$jpg_image = imagecreatefrompng('char_card_pic.png');
+		$jpg_image = imagecreatefrompng('./image/char_card_pic.png');
 	}else if($char_type=="char_text"){
-		$jpg_image = imagecreatefrompng('char_card.png');
+		$jpg_image = imagecreatefrompng('./image/char_card.png');
 	}else{
 		die("Type error");
 	}
@@ -38,7 +38,6 @@
 	$fs_description=18;
 	$fs_mantra=22;
 	$fs_team=22;
-	
 
 	// Set Angle
 	$ag_des=359;

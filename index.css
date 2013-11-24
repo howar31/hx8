@@ -186,3 +186,13 @@
 #ss-submit:hover {
 	background-color: #381F1F;
 }
+
+#char_generator_link {
+	text-decoration: none;
+	color: #888888;
+	font-size: 1em;
+}
+
+#char_generator_link:hover {
+	color: #CCCCCC;
+}

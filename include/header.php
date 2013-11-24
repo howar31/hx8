@@ -85,6 +85,7 @@ $("#msg_logout").click(function(){
 	  $('#msg_logout').hide();
 	  $('#signinButton').show();
 	  $('#msg_content').html('成功登出');
+	  document.location.href="/hx8/";
         },
         error: function(e) {
           console.log(e);

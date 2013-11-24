@@ -65,6 +65,7 @@
 }
 
 #char_preview img,
+.char_upload,
 .char_pic {
 	display: none;
 	width: 540px;
@@ -79,6 +80,7 @@
 }
 
 #char_content input[type="text"],
+#char_content input[type="url"],
 #char_content textarea {
 	border-radius: 5px;
 	padding: 5px;
@@ -115,7 +117,8 @@
 	margin-left: 10px;
 }
 
-#char_submit {
+#char_submit,
+#char_upload_submit {
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
@@ -123,9 +126,20 @@
 	height: 40px;
 	border: none; 
 	cursor: pointer;
-	background: url('./image/char_submit.png');
+	color: #AAAAAA;
+	font-size: 1em;
 }
 
+#char_upload_submit {
+	background: url('./image/char_sbmt.png');
+}
+#char_upload_submit:hover {
+	background: url('./image/char_sbmt_hover.png');
+}
+
+#char_submit {
+	background: url('./image/char_submit.png');
+}
 #char_submit:hover {
 	background: url('./image/char_submit_hover.png');
 }

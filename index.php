@@ -51,20 +51,6 @@
 
 	<? require_once("./include/footer.php"); ?>
 
-	<div class="simple_overlay" id="overlay_login">
-		<div class="overlay_title">登入</div>
-		<div class="overlay_hr"></div>
-		<div class="overlay_content">
-			<form id="login_form">
-				<input type="text" id="login_user" placeholder="輸入帳號">
-				<input type="password" id="login_pass" placeholder="輸入密碼">
-				<input type="checkbox" id="login_rmbr"><label for="login_rmbr" id="login_rmbr_label">記住資料</label>
-				<input type="submit" id="login_submit" value="確認">
-			</form>
-		</div>
-		<a href="#" id="login_rgstr">註冊</a>
-	</div>
-
 	<div class="simple_overlay" id="overlay_contract">
 		<div class="overlay_title" id="contract_form_title">注意事項</div>
 		<div class="overlay_hr"></div>
@@ -127,6 +113,7 @@
 				<p>
 				您已經填過玩家基本資料，請收到官方回信之後開始生成角色卡。
 				</p>
+				<a href="./character.php" id="char_generator_link">生成角色卡！</a>
 			</div>
 		</div>
 		<span id="signinButton">
