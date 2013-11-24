@@ -9,23 +9,25 @@
 	$char_describe=$_POST[char_describe];
 	$char_prefer="喜歡/討厭：".$_POST[char_prefer];
 	$char_expert="擅長：".$_POST[char_expert];
+	$char_type=$_POST[char_type];
 	if($_POST[char_team]==""){
 		$char_team="隸屬隊伍：無";
 	}else{
 		$char_team="隸屬隊伍：".$_POST[char_team];
 	}
 	
-
-	
 	//Set the Content Type
 	header('Content-type: image/png');
 
 	// Create Image From Existing File
-	if($char_describe==""){
+	// if($char_describe==""){
+	if($char_type=="char_pic"){
 		//file
 		$jpg_image = imagecreatefrompng('char_card_pic.png');
-	}else{
+	}else if($char_type=="char_text"){
 		$jpg_image = imagecreatefrompng('char_card.png');
+	}else{
+		die("Type error");
 	}
 
 	// Set Font Size 
@@ -47,7 +49,7 @@
 	$red   = imagecolorallocate($jpg_image, 179, 27, 27);
 
 	// Set Path to Font File
-	$font_path = 'wthc06.ttf';
+	$font_path = './wthc06.ttf';
 
 	// Set Text to Be Printed On Image
 	$text = "This is a sunset!";
@@ -80,7 +82,8 @@
 	
 	imagettftext($jpg_image, $fs_team,				0, 450, 870+$y_offset, $red, $font_path, $char_team);
 
-	if($char_describe!=""){
+	// if($char_describe!=""){
+	if($char_type=="char_text"){
 		$wrap_description=autowarp($fs_description, 0, $font_path, $char_describe, 200);
 		drawboldtext($jpg_image, $fs_description, $ag_des, 430, 109+$y_offset, $black, $font_path, $wrap_description,2);
 	}else{

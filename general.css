@@ -140,3 +140,7 @@ html, body {
 .clearboth {
 	clear: both;
 }
+
+#signinstatecheck {
+	display: none;
+}
