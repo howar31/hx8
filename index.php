@@ -113,7 +113,8 @@
 				<p>
 				您已經填過玩家基本資料，請收到官方回信之後開始生成角色卡。
 				</p>
-				<a href="./character.php" id="char_generator_link">生成角色卡！</a>
+				<p><a href="./character.php" id="char_generator_link">生成角色卡！</a></p>
+				<p><iframe width='550' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0AvPZ-eeLNBs9dHFRV2hTaTNRaGRxZmp2b01meUFWN2c&single=true&gid=0&output=html&widget=true'></iframe></p>
 			</div>
 		</div>
 		<span id="signinButton">
