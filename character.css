@@ -151,3 +151,21 @@
 	width: 600px;
 	height: 700px;
 }
+
+.char_upload p {
+	font-size: 0.9em;
+	color: #AAAAAA;
+}
+
+.char_upload a {
+	color: white;
+	text-decoration: none;
+}
+
+.char_upload a:hover {
+	color: yellow;
+}
+
+.char_upload .emph {
+	color: red;
+}

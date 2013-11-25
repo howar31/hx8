@@ -58,11 +58,18 @@ function signinCallback(authResult) {
 			//   "immediate_failed" - Could not automatically log in the user
 			switch(authResult['error']) {
 				case 'user_signed_out':
-				break;
+					alert("您已經成功登出！");
+					break;
 				case 'access_denied':
-				break;
+					alert("Google拒絕我們的存取，請檢查登入認證是否設定錯誤");
+					document.location.href="/hx8/";
+					break;
 				case 'immediate_failed':
-				break;
+					if(!(window.location.pathname.split('/').pop())==""){
+						alert("注意！您尚未登入！請回首頁依程序參加活動");
+						document.location.href="/hx8/";
+					}
+					break;
 			}
 		}
 //		console.log('authResult', authResult);

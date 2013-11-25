@@ -40,8 +40,8 @@
 						<label for="char_age">*年齡</label><input type="text" name="char_age" id="char_age"><br></div>
 						<div class="char_text char_pic"><label for="char_class">*身分(職業)</label><input type="text" name="char_class" id="char_class" placeholder="限制8字以內" maxlength="8">
 						<label for="char_gender">*性別</label><input type="text" name="char_gender" id="char_gender"><br></div>
-						<div class="char_text char_pic"><label for="char_mantra">角色台詞</label><input type="text" name="char_mantra" id="char_mantra" class="char_fullwidth" placeholder="限制20字以內，不需要輸入引號，系統會自動加" maxlength="20"><br></div>
-						<div class="char_text char_pic"><label for="char_intro">*角色介紹</label><textarea type="text" name="char_intro" id="char_intro" class="char_fullwidth" placeholder="限制17字以內" maxlength="17"></textarea><br></div>
+						<div class="char_text char_pic"><label for="char_mantra">角色台詞</label><input type="text" name="char_mantra" id="char_mantra" class="char_fullwidth" placeholder="限制17字以內，不需要輸入引號，系統會自動加" maxlength="17"><br></div>
+						<div class="char_text char_pic"><label for="char_intro">*角色介紹</label><textarea type="text" name="char_intro" id="char_intro" class="char_fullwidth" placeholder="限制108字以內" maxlength="108"></textarea><br></div>
 						<div class="char_text"><label for="char_describe">*角色描述</label><textarea type="text" name="char_describe" id="char_describe" class="char_fullwidth" placeholder="限制104字以內" maxlength="104"></textarea><br></div>
 						<div class="char_pic"><label for="char_pic">*角色圖片</label>
 <!--<button id="char_pic_btn" title="限制 426px * 520px 以內">從電腦上傳圖片</button>-->
@@ -59,6 +59,9 @@
 						<div class="char_upload">
 							<label for="entry_124427796">角色卡連結</label>
 							<input class="char_fullwidth" type="url" name="entry.124427796" value="" id="entry_124427796" aria-label="請將角色卡的連結貼至此。  " aria-required="true" required="" title="" placeholder="請輸入角色卡圖片網址">
+							<p>請注意，角色卡圖片產生後，必須要自行<span class="emph">按右鍵另存圖片</span>，然後將圖片上傳到<a href="http://imgur.com" target="_blank">imgur</a>後，再複製網址貼過來這邊</p>
+							<p><span class="emph">直接複製產生器的網址是不行的</span>，我們看不到圖喔！</p>
+							<p>上傳時注意右上角是否已經是登入狀態，否則會不知道圖片是誰的，感謝！:D</p>
 						</div>
 						<input type="hidden" name="entry.1345643953" value="" id="entry_1345643953"> 
 						<input class="char_upload" type="submit" name="submit" value="上傳" id="char_upload_submit">
